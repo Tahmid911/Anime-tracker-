@@ -1,11 +1,27 @@
-<div align="center">
+# Anime Tracker
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+A mobile-first Android anime tracker built with Kotlin and Jetpack Compose.
 
-  <h1>Built with AI Studio</h2>
+## Works without Google AI
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+- Search anime by name using the public Jikan/MyAnimeList catalog
+- Add shows to a local Room database
+- Track watch status and episode-by-episode progress
+- Add personal ratings and notes
+- View library, details, archives, statistics, and PDF/JSON/Markdown exports
+- Fetch poster art from public anime catalog sources
+- No Gemini key, AI Studio approval, Firebase AI setup, or server account is required
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Build
 
-</div>
+Open this repository in Android Studio and run the `app` configuration, or use:
+
+```bash
+./gradlew assembleDebug
+```
+
+The debug APK is created at `app/build/outputs/apk/debug/app-debug.apk`.
+
+## Important note
+
+Photo recognition is intentionally not used in this build because it depended on Google AI approval. The reliable replacement is title search, which keeps the tracker fully usable without an AI key.
